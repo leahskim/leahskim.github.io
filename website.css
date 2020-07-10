@@ -1,0 +1,61 @@
+#title{
+    color:#f3bbba;
+    letter-spacing:7px;
+    font-family:sans-serif;
+    font-size:80px;
+    text-align:center;
+    margin-top:23%;
+}
+
+.page{
+    color:#f3bbba;
+    font-family:sans-serif;
+    font-size:80px;
+    letter-spacing:-15px;
+    writing-mode:vertical-rl;
+    text-orientation:upright;
+    position:absolute;
+}
+
+.page:hover{
+    color:#fda6a6;
+}
+
+a{
+    outline:0;
+    border:none;
+    text-decoration:none;
+}
+
+#about{
+    margin-top:-7.16%;
+    margin-left:43%;  
+    opacity:0.3;
+}
+
+#projekts{
+    margin-top:-24.1%;
+    margin-left:50.1%;
+    opacity:0.3;
+}
+
+#resume{
+    margin-top:-20.7%;
+    margin-left:54.999998%;
+    opacity:0.3;
+}
+
+#about:hover{
+    opacity:1;
+    transition: opacity .2s ease-in-out .0s;
+}
+
+#projekts:hover{
+    opacity:1;
+    transition: opacity .2s ease-in-out .0s;
+}
+
+#resume:hover{
+    opacity:1;
+    transition: opacity .2s ease-in-out .0s;
+}
