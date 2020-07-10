@@ -3,7 +3,7 @@
 #title{
     color:#f3bbba;
     letter-spacing:7px;
-    font-family:'Roboto',sans-serif;
+    font-family:'Roboto','sans-serif';
     font-size:80px;
     text-align:center;
     margin-top:23%;
@@ -11,7 +11,7 @@
 
 .page{
     color:#f3bbba;
-    font-family:'Roboto',sans-serif;
+    font-family:'Roboto','sans-serif';
     font-size:80px;
     letter-spacing:-15px;
     writing-mode:vertical-rl;
