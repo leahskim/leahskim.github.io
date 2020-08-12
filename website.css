@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    width:100%;
+    overflow:hidden;
+    padding:10px;
+    margin-bottom:10px;
+}
+
+.nav-link{
+    color:#ff9c9a;
+    letter-spacing:2px;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.nav-link:hover{
+    color:#ff7c7a;
+}
+
+a, a:focus, a:active{
+    border:0;
+    outline:none;
+    text-decoration:none;
+}
+
+.navbar-brand{
+    color:#ff9c9a;
+    letter-spacing:3px;
+}
+
+.navbar-brand:hover{
+    color:#ff9c9a;
+}
+
+.navbar{
+    border-bottom:1.5px solid #d1d1d1e7;
+}
+
+.hey{
+    font-size:350%;
+    font-weight:bold;
+    font-style:italic;
+    color:#ffffff;
+    text-align:center;
+    padding-top:15%;
+}
+
+.cover{
+    width:100%;
+    height:100vh;
+}
+
+.cover-center{
+    margin:0;
+    position:absolute;
+    top:13%;
+    left:20%;
+}
+
+h2, h3{
+    font-weight:bold;
+    color:#ff9c9a;
+}
+
+h3.title{
+    padding-top:40px;
+    padding-bottom:30px;
+    letter-spacing:3px;
+    width:100%;
+    float:left;
+}
+
+p{
+    color:#5f5f5f;
+    font-weight:550;
+    font-size:17px;
+    margin-bottom:17px;
+}
+
+p.cap{
+    margin-bottom:15px;
+}
+
+
+h5{
+    font-weight:bold;
+}
+
+.uts{
+    float:left;
+    width:60%;
+    padding-right:20px;
+}
+
+.uw{
+    float:left;
+    width:40%;
+    padding-left:15px;
+}
+
+.column50{
+    float:left;
+    width:50%;
+}
+
+.pic{
+    border-radius:30px;
+}
+
+.img-center{
+    margin-top:3%;
+    margin-right:20%;
+    float:right;
+}
+
+.column25{
+    float:left;
+    width:25%;
+}
+
+i{
+    color:#5f5f5f;
+    float:left;
+}
+
+.fa{
+    margin-left:7px;
+}
+
+.rate{
+    margin-top:5px;
+    margin-bottom:18px;
+}
+
+a.project{
+    color:black;
+    font-weight:bold;
+    font-size:200%;
+    text-decoration:none;
+}
+
+a.project:hover{
+    color:#575757;
+    font-style:italic;
+}
+
+.carousel-control-next:focus,.carousel-control-next:hover,.carousel-control-prev:focus,.carousel-control-prev:hover{
+    color:#5f5f5f;text-decoration:none;outline:0;opacity:.9
+}
+
+p.contacts{
+    padding-left:37px;
+    margin-bottom:-15px;
+    text-align:left;
+    width:95%;
+}
