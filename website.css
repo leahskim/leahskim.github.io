@@ -19,7 +19,7 @@
 }
 
 .nav-link:hover{
-    color:#ff7c7a;
+    color:#ff8481;
 }
 
 a, a:focus, a:active, a:hover{
@@ -28,13 +28,13 @@ a, a:focus, a:active, a:hover{
     text-decoration:none;
 }
 
-.navbar-brand{
+.navbar-brand,title{
     color:#ff9c9a;
     letter-spacing:3px;
 }
 
-.navbar-brand:hover{
-    color:#ff9c9a;
+.navbar-brand:hover,title:hover{
+    color:#ff8481;
 }
 
 .navbar{
@@ -47,7 +47,7 @@ a, a:focus, a:active, a:hover{
     font-style:italic;
     color:#ffffff;
     text-align:center;
-    padding-top:15%;
+    padding-top:14%;
 }
 
 .cover{
@@ -127,6 +127,7 @@ h5{
 i{
     color:#5f5f5f;
     float:left;
+    padding-top:0.5%;
 }
 
 .fa{
