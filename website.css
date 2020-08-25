@@ -171,3 +171,12 @@ p.contacts{
     color:white;
     font-style:italic;
 }
+
+a.site{
+    color:#ff9c9a;
+    font-weight:500;
+}
+
+a.site:hover{
+    color:#ff8481;
+}
