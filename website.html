@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!--meta tags-->
+    <meta charset="UTF-8">
+    <meta name="keywords" content="resume; website; personal website; ui; ux;">
+    <meta name="description" content="Sarah Kim's personal website">
+    <meta name="author" content="Sarah Kim">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"  />
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="website.css">
+    <script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $('a[href*="#"]:not([href="#"]):not([href="#carouselExampleCaptions"])').click(function() {
+
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+        
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+
+    </script>
+
+    <title>Personal Website</title>
+    <link rel="icon" type="image/png" href="favicon 2.png">
+
+</head>
+
+
+<body> 
+    <!-- navbar -->
+    <nav class="navbar fixed-top" style="background-color:#ffffffe7;">
+        <div class="container-lg">
+
+            <a class="navbar-brand scrollLink" href="index.html"><h2>sarah kim</h2></a>
+
+        </div>
+    </nav>
+        
+        
+    <h3 class="title" style="padding-bottom:4.5%;"></h3>
+    <!-- cover -->
+    <div style="height:75px;"></div>
+    <div class="cover" style="background-color:#ff9c9a; height:500px;">
+        <div class="container-lg cover-center">
+
+            <h1 class="hey">Personal Website</h1>            
+
+        </div>
+    </div>
+    
+    <div>
+        <div class="container-lg">
+            <h3 style="margin-bottom:10.5%;"></h3>
+
+            <p>This website is my first personal project I’ve ever published online. As I was writing up my resume, I realized that I’ve so far only learned from workshops and tutorials, but haven’t applied my knowledge to create something of my own. I figured that creating a website would be a perfect way to test my skills as well as introduce myself to others in a creative way. I used the Bootstrap framework, HTML, and CSS to create this site.</p>
+
+            <div style="margin-top:111px;padding-left:50px;">
+              <img src="home sketch.jpg" alt="home page sketch" style="width:300px;padding-left:30px;">
+              <img src="experience sketch.jpg" alt="experience page sketch" style="width:300px;padding-left:30px;">
+              <img src="projects sketch.jpg" alt="projects page sketch" style="width:300px;padding-left:30px;">
+            </div>
+
+            <div>
+              <p style="width:300px;float:left;font-size:15px;margin-top:10px;margin-left:80px;">Home Page Sketch</p>
+              <p style="width:300px;float:left;font-size:15px;margin-top:10px;margin-left:4px;">Experience Page Sketch</p>
+              <p style="width:300px;float:left;font-size:15px;margin-top:10px;margin-left:4px;">Projects Page Sketch</p>
+            </div>
+            
+
+            <p style="margin-top:141px;">I started out with a rough sketch of what I wanted each page to look like, in terms of font size, colour, and layout. I was initially planning on making separate pages for each section, as shown in the sketches, but later realized how short each of my pages would actually be if made individually. Instead, I merged them all into one long home page with the navigation links anchored to each section.</p>
+            <p style="margin-bottom:11%;">Although it may say 2020 for the creation date, my personal website has no real due date because I will constantly be learning new skills in the future that will help me improve it. This specific website is only the first step in my journey to become an innovative designer and an efficient problem-solver.</p>
+
+        </div>
+    </div>
+</body>
+</html>
