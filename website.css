@@ -1,205 +1,175 @@
-<!DOCTYPE html>
-<html>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
-<head>
+*{
+    font-family: 'Poppins', sans-serif;
+}
 
-    <!--meta tags-->
-    <meta charset="UTF-8">
-    <meta name="keywords" content="resume; website; personal website; ui; ux;">
-    <meta name="description" content="Sarah Kim's personal website">
-    <meta name="author" content="Sarah Kim">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+.navbar{
+    width:100%;
+    overflow:hidden;
+    padding:10px;
+    margin-bottom:10px;
+}
 
-    <!--bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"  />
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+.nav-link{
+    color:#ff9c9a;
+    letter-spacing:2px;
+    font-weight:bold;
+    font-size:20px;
+}
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+.nav-link:hover{
+    color:#ff8481;
+}
 
-    <link rel="stylesheet" href="website.css">
-    <script>
-      $(document).ready(function(){
-        // Add smooth scrolling to all links
-        $('a[href*="#"]:not([href="#"]):not([href="#carouselExampleCaptions"])').click(function() {
+a, a:focus, a:active, a:hover{
+    border:0;
+    outline:none;
+    text-decoration:none;
+}
 
-          // Make sure this.hash has a value before overriding default behavior
-          if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
+.navbar-brand,title{
+    color:#ff9c9a;
+    letter-spacing:3px;
+}
 
-            // Store hash
-            var hash = this.hash;
+.navbar-brand:hover,title:hover{
+    color:#ff8481;
+}
 
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 800, function(){
-        
-              // Add hash (#) to URL when done scrolling (default click behavior)
-              window.location.hash = hash;
-            });
-          } // End if
-        });
-      });
+.navbar{
+    border-bottom:1.5px solid #d1d1d1e7;
+}
 
-    </script>
+.hey{
+    font-size:350%;
+    font-weight:bold;
+    font-style:italic;
+    color:#ffffff;
+    text-align:center;
+    padding-top:18%;
+}
 
-    <title>Sarah Kim</title>
-    <link rel="icon" type="image/png" href="favicon 2.png">
+.cover{
+    width:100%;
+    height:100%;
+}
 
-</head>
+h2, h3{
+    font-weight:bold;
+    color:#ff9c9a;
+}
+
+h3.title{
+    padding-top:35px;
+    padding-bottom:30px;
+    letter-spacing:3px;
+    width:100%;
+    float:left;
+}
+
+p{
+    color:#5f5f5f;
+    font-weight:550;
+    font-size:17px;
+    margin-bottom:20px;
+    line-height:2;
+}
+
+p.cap{
+    margin-bottom:15px;
+}
 
 
-<body> 
-  <!-- navbar -->
-  <nav class="navbar fixed-top" style="background-color:#ffffffe7;">
-      <div class="container-lg">
+h5{
+    font-weight:bold;
+}
 
-          <a class="navbar-brand scrollLink" href="#top"><h2>sarah kim</h2></a>
-      
-          <ul class="nav justify-content-end" id="navpages">
-              <li class="nav-item">
-                <a class="nav-link scrollLink" href="#about">about me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link scrollLink" href="#experience">experience</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link scrollLink" href="#projects">projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link scrollLink" href="resume.pdf" target="_blank">resume</a>
-              </li>
-          </ul>
+.uts{
+    float:left;
+    width:60%;
+    padding-right:20px;
+}
 
-      </div>
-    </nav>
-  
-  
-  <h3 class="title" id="top" style="padding-bottom:4.5%;"></h3>
-  <!-- cover -->
-  <div style="height:75px;"></div>
-  <div class="cover" style="background-color:#ff9c9a; height:500px;">
-    <div class="container-lg">
+.uw{
+    float:left;
+    width:40%;
+    padding-left:15px;
+}
 
-      <h1 class="hey">Hey, I'm Sarah Kim!</h1>
-      <h6 style="text-align:center;color:white;">(this website is best experienced on a desktop, fullscreen. sorry for the inconvenience.)</h6>
+.column50{
+    float:left;
+    width:50%;
+}
 
-    </div>
-  </div>
-  
-  <div>
-    <div class="container-lg">
-      <h3 id="about" style="padding-bottom:8.2%;"></h3>
-      <!-- about me -->
-      <div>
-        <h3 class="title">about me</h3>
-        <p>I'm a first year student at University of Waterloo, majoring in Systems Design Engineering. I have been interested in UI/UX design since Grade 10 and have become accustomed to using different design softwares, such as Adobe Photoshop, Adobe Illustrator, and Figma. This personal website is the first project I have published online and I hope you enjoy scrolling through it!</p>
-      </div>
+.pic{
+    border-radius:30px;
+}
 
-      <!-- education -->
-      <div style="margin-bottom:520px;">
-        <h3 class="title">education</h3>
+.img-center{
+    margin-top:3%;
+    margin-right:20%;
+    float:right;
+}
 
-        <div class="uts">
-          <h5>University of Toronto Schools</h5>
-          <p class="cap">
-            (2014 - 2020)
-          </p>
-          <p>
-            Throughout high school, I was interested in various areas of STEM, including math, physics, and computer science. I have participated in multiple math and programming contests, placing in the top 20th percentile for most.
-          </p>
-          <p>
-            I was very active in the school's music department, being a section leader for strings ensembles and the senior orchestra. I also co-produced multiple music events and have won an annual music scholarship.
-          </p>
-        </div>
-        
-        <div class="uw">
-          <h5>University of Waterloo</h5>
-          <p class="cap">
-            (Expected Graduation 2025)
-          </p>
-          <p>
-            I am currently majoring in Systems Design Engineering, a design-oriented engineering program at University of Waterloo. 
-          </p>
-          <p>
-          
-          </p>
-        </div>
+.column25{
+    float:left;
+    width:25%;
+}
 
-      </div>
+i{
+    color:#5f5f5f;
+    float:left;
+    padding-top:0.5%;
+}
 
-      <h3 class="title" id="experience" style="padding-bottom:5.2%;"></h3>
-      <!-- experience -->
-        <h3 class="title" style="width:100%;float:left;">experience</h3>
+.fa{
+    margin-left:7px;
+}
 
-        <div style="width:100%;float:left;padding-bottom:70px;">
-          <!-- spirit of math -->
-          <div class="uts">
-            <h5>Spirit of Math Schools</h5>
-            <p class="cap">Assistant Teacher (2016 - 2020)</p>
-            <p>As an assistant teacher, I was responsible for helping students thrive in math by keeping them engaged during lessons and group work. I would also take time each week to explain questions to those who were struggling with the material. Having this position for four years allowed me to gain leadership skills as well as the initiative to bring in fresh ideas each week in order to help both students and teachers well-adjust to the classroom environment.</p>
-          </div>
+.rate{
+    margin-top:5px;
+    margin-bottom:18px;
+}
 
-          <!-- starterhacks -->
-          <div class="uw">
-            <h5>StarterHacks</h5>
-            <p class="cap">Participant (2020)</p>
-            <p>In January 2020, I participated in StarterHacks in hopes of learning more about software and product design, such as layouting and accessibility. I applied what I learned when designing our product's brand, considering various components such as colour scheme, typography, and logo.</p>
-          </div>
-          
-        </div>
+a.project{
+    color:black;
+    font-weight:bold;
+    font-size:200%;
+    text-decoration:none;
+}
 
-      <h3 class="title" id="projects" style="padding-bottom:5%;"></h3>
-      <!-- projects -->
-      <div style="padding-top:61.5%;">
-        <h3 class="title" style="margin-bottom:-15px;">projects</h3>
-        
-        <div class="column50">
-          <img src="ill.png" alt="project illustration" style="margin-top:4%;margin-left:20%;margin-bottom:7%;">
-        </div>
-        
-        <div style="margin-top:122px;padding-left:55%;height:825px;">
-          <!-- spotify -->
-          <div style="padding-bottom:2%;">
-            <a class="project" href="spotify.html">Spotify Playlist Covers</a>
-            <p class="cap">(2017 - Present)</p>
-          </div>
+a.project:hover{
+    color:#575757;
+    font-style:italic;
+}
 
-          <!-- adobe illustrator -->
-          <div style="padding-bottom:2%;">
-            <a class="project" href="illustrator.html">Adobe Illustrator</a>
-            <p class="cap">(2020)</p>
-          </div>
+.carousel-control-next:focus,.carousel-control-next:hover,.carousel-control-prev:focus,.carousel-control-prev:hover{
+    color:#5f5f5f;text-decoration:none;outline:0;opacity:.9
+}
 
-          <!-- personal website -->
-          <div style="padding-bottom:2%;">
-            <a class="project" href="website.html">Personal Website</a>
-            <p class="cap">(2020)</p>
-          </div>
+p.contacts{
+    padding-left:37px;
+    margin-bottom:-15px;
+    text-align:left;
+    width:95%;
+}
 
-        </div>
-      </div>      
-    
-      <!-- contacts -->
-      <div style="padding-top:5%;padding-bottom:13.3%;">
-        <h3 class="title">contacts</h3> 
+.back{
+    color:white;
+    letter-spacing:1px;
+}
 
-        <i class="material-icons">email</i><p class="contacts">you.jin.kim@uwaterloo.ca</p>
-        <br>
-        <i class="material-icons">phone</i><p class="contacts">647.868.8291</p>
-        <br>
-        <i class="material-icons">location_on</i><p class="contacts">Toronto, ON, Canada</p>
-      </div>
+.back:hover{
+    color:white;
+    font-style:italic;
+}
 
-    </div>
-  </div>
-</body>
-</html>
+a.site{
+    color:#ff9c9a;
+    font-weight:500;
+}
+
+a.site:hover{
+    color:#ff8481;
+}
