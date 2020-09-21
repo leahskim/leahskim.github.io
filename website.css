@@ -6,9 +6,10 @@
 
 .navbar{
     width:100%;
-    overflow:hidden;
-    padding:10px;
-    margin-bottom:10px;
+    position:fixed;
+    top:0;
+    transition:top 0.3s;
+    box-shadow: 0px 2px 15px 2px #ff9c9a;
 }
 
 .nav-link{
@@ -22,7 +23,7 @@
     color:#ff8481;
 }
 
-a, a:focus, a:active, a:hover{
+a, a:focus, a:active, a:hover, button:focus{
     border:0;
     outline:none;
     text-decoration:none;
@@ -37,22 +38,22 @@ a, a:focus, a:active, a:hover{
     color:#ff8481;
 }
 
-.navbar{
-    border-bottom:1.5px solid #d1d1d1e7;
-}
-
 .hey{
     font-size:350%;
     font-weight:bold;
     font-style:italic;
     color:#ffffff;
     text-align:center;
-    padding-top:18%;
+    padding-top:200px;
 }
 
 .cover{
     width:100%;
-    height:100%;
+    height:500px;
+}
+
+h2{
+    font-size:150%;
 }
 
 h2, h3{
@@ -117,19 +118,18 @@ h5{
     width:25%;
 }
 
-i{
-    color:#5f5f5f;
-    float:left;
-    padding-top:0.5%;
+button{
+    background-color:#5f5f5f;
+    border:none;
+    width:70px;
+    height:70px;
+    font-size:35px;
+    color:#ffffff;
+    border-radius:100%;
 }
 
-.fa{
-    margin-left:7px;
-}
-
-.rate{
-    margin-top:5px;
-    margin-bottom:18px;
+button:hover{
+    background-color:#ff9c9a;
 }
 
 a.project{
@@ -142,10 +142,6 @@ a.project{
 a.project:hover{
     color:#575757;
     font-style:italic;
-}
-
-.carousel-control-next:focus,.carousel-control-next:hover,.carousel-control-prev:focus,.carousel-control-prev:hover{
-    color:#5f5f5f;text-decoration:none;outline:0;opacity:.9
 }
 
 p.contacts{
@@ -166,10 +162,11 @@ p.contacts{
 }
 
 a.site{
-    color:#ff9c9a;
+    color:#5f5f5f;
     font-weight:500;
 }
 
 a.site:hover{
-    color:#ff8481;
+    color:#494949;
+    font-style:italic;
 }
