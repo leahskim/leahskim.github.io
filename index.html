@@ -18,39 +18,10 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="website.css">
-    <script>
-      $(document).ready(function(){
-        // Add smooth scrolling to all links
-        $('a[href*="#"]:not([href="#"]):not([href="#carouselExampleCaptions"])').click(function() {
-
-          // Make sure this.hash has a value before overriding default behavior
-          if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
-
-            // Store hash
-            var hash = this.hash;
-
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 800, function(){
-        
-              // Add hash (#) to URL when done scrolling (default click behavior)
-              window.location.hash = hash;
-            });
-          } // End if
-        });
-      });
-
-    </script>
 
     <title>Sarah Kim</title>
     <link rel="icon" type="image/png" href="favicon 2.png">
@@ -60,20 +31,20 @@
 
 <body> 
   <!-- navbar -->
-  <nav class="navbar fixed-top" style="background-color:#ffffffe7;">
+  <nav class="navbar" style="background-color:#ffffffe7;">
       <div class="container-lg">
 
-          <a class="navbar-brand scrollLink" href="#top"><h2>sarah kim</h2></a>
+          <a class="navbar-brand" href="#top"><h2>sarah kim</h2></a>
       
-          <ul class="nav justify-content-end" id="navpages">
-              <li class="nav-item">
-                <a class="nav-link scrollLink" href="#about">about me</a>
+          <ul class="nav" id="navpages">
+              <li>
+                <a class="nav-link" href="#about">about me</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link scrollLink" href="#projects">projects</a>
+              <li>
+                <a class="nav-link" href="#projects">projects</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link scrollLink" href="resume.pdf" target="_blank">resume</a>
+              <li>
+                <a class="nav-link" href="resume.pdf" target="_blank">resume</a>
               </li>
           </ul>
 
@@ -83,12 +54,11 @@
   
   <h3 class="title" id="top" style="padding-bottom:4.5%;"></h3>
   <!-- cover -->
-  <div style="height:75px;"></div>
-  <div class="cover" style="background-color:#ff9c9a; height:500px;">
+  <div style="height:70px;background-color:#ff9c9a;"></div>
+  <div class="cover" style="background-color:#ff9c9a;">
     <div class="container-lg">
 
       <h1 class="hey">Hey, I'm Sarah Kim!</h1>
-      <h6 style="text-align:center;color:white;">(this website is best experienced on a desktop, fullscreen. sorry for the inconvenience.)</h6>
 
     </div>
   </div>
@@ -140,14 +110,14 @@
         <h3 class="title" style="margin-bottom:-15px;">projects</h3>
         
         <div class="column50">
-          <img src="ill.png" alt="project illustration" style="margin-top:4%;margin-left:20%;margin-bottom:7%;">
+          <img src="ill.png" alt="project illustration" style="width:80%;margin-top:46px;margin-left:20%;margin-bottom:7%;">
         </div>
         
-        <div style="margin-top:122px;padding-left:55%;height:825px;">
+        <div style="margin-top:100px;padding-left:55%;">
           <!-- spotify -->
           <div style="padding-bottom:2%;">
             <a class="project" href="spotify.html">Spotify Playlist Covers</a>
-            <p class="cap">(2017 - Present)</p>
+            <p class="cap;">(2017 - Present)</p>
           </div>
 
           <!-- adobe illustrator -->
@@ -164,19 +134,61 @@
 
         </div>
       </div>      
-    
+      
+      <h3 class="title" style="padding-bottom:5%;"></h3>
       <!-- contacts -->
-      <div style="padding-top:5%;padding-bottom:13.3%;">
-        <h3 class="title">contacts</h3> 
+      <div style="float:left;padding-bottom:13.3%;">
 
-        <i class="fab fa-linkedin" style="padding-left:2px;font-size:20px;"></i><p class="contacts"><a class="site" href="https://www.linkedin.com/in/sarahkim1108/"><p class="contacts">/sarahkim1108</p></a>
-        <br>
-        <i class="material-icons" style="margin-left:-1px;">email</i><p class="contacts">you.jin.kim@uwaterloo.ca</p>
-        <br>
-        <i class="material-icons" style="margin-left:-3.5px;">location_on</i><p class="contacts">Toronto, ON, Canada</p>
+        <a href="mailto: you.jin.kim@uwaterloo.ca" target="_blank">
+          <button style="margin-left:25vw;"><i class="fas fa-at"></i></button>
+        </a>
+
+        <a href="https://www.linkedin.com/in/sarahkim1108/" target="_blank">
+          <button style="margin-left:2vw;"><i class="fab fa-linkedin-in"></i></button>
+        </a>
+
       </div>
 
     </div>
   </div>
+
+  <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $('a[href*="#"]').click(function() {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+      
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-50px";
+      }
+      prevScrollpos = currentScrollPos;
+    } 
+  </script>
+
 </body>
 </html>
