@@ -73,8 +73,20 @@
       </div>
 
       <!-- education -->
-      <div style="margin-bottom:520px;">
-        <h3 class="title">education</h3>
+      <div style="margin-top:64px;margin-bottom:520px;">
+
+        <div class="uw">
+          <h5>University of Waterloo</h5>
+          <p class="cap">
+            (Expected Graduation 2025)
+          </p>
+          <p>
+            I am currently majoring in Systems Design Engineering, a unique design-oriented engineering program at University of Waterloo. 
+          </p>
+          <p>
+            Some courses I am taking are a computation course on C++ and a design course on using CAD softwares (i.e. SOLIDWORKS) to create 3D designs.
+          </p>
+        </div>
 
         <div class="uts">
           <h5>University of Toronto Schools</h5>
@@ -86,19 +98,6 @@
           </p>
           <p>
             I was very active in the school's music department, being a section leader for strings ensembles and the senior orchestra. I also co-produced multiple music events and have won an annual music scholarship.
-          </p>
-        </div>
-        
-        <div class="uw">
-          <h5>University of Waterloo</h5>
-          <p class="cap">
-            (Expected Graduation 2025)
-          </p>
-          <p>
-            I am currently majoring in Systems Design Engineering, a unique design-oriented engineering program at University of Waterloo. 
-          </p>
-          <p>
-            Some courses I am taking are a computation course on C++ and a design course on using CAD softwares (i.e. SOLIDWORKS) to create 3D designs.
           </p>
         </div>
 
@@ -153,6 +152,7 @@
   </div>
 
   <script>
+    
     $(document).ready(function(){
       // Add smooth scrolling to all links
       $('a[href*="#"]').click(function() {
@@ -178,18 +178,6 @@
       });
     });
 
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-      var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.top = "0";
-      }
-      
-      else {
-        document.getElementById("navbar").style.top = "-100px";
-      }
-      prevScrollpos = currentScrollPos;
-    } 
   </script>
 
 </body>
