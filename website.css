@@ -19,10 +19,6 @@
     font-size:20px;
 }
 
-.nav-link:hover{
-    color:#ff8481;
-}
-
 a, a:focus, a:active, a:hover, button:focus{
     border:0;
     outline:none;
@@ -34,7 +30,7 @@ a, a:focus, a:active, a:hover, button:focus{
     letter-spacing:3px;
 }
 
-.navbar-brand:hover,title:hover{
+.nav-link:hover,.navbar-brand:hover,title:hover,h2:hover{
     color:#ff8481;
 }
 
