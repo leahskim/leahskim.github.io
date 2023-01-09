@@ -158,11 +158,11 @@ p.contacts{
 }
 
 a.site{
-    color:#5f5f5f;
+    color:#ff9c9a;
     font-weight:500;
 }
 
 a.site:hover{
-    color:#494949;
+    color:#ff8481;
     font-style:italic;
 }
